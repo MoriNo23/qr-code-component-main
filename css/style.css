@@ -17,7 +17,7 @@ body {
   font-family: "Fira Sans", sans-serif;
   color: var(--second-color);
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 100%;
   justify-content: center;
 }
 
@@ -32,10 +32,11 @@ body {
 }
 
 .container {
+  padding: 20px;
   width: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-self: center;
 }
 
 .qr_figure {
@@ -50,7 +51,7 @@ body {
 }
 
 .qr_figure h1 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 20px 0;
   color: var(--accent-color);
   text-align: center;
@@ -68,12 +69,19 @@ body {
   -o-border-radius: 8px;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 1000px) {
+  .container {
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
   .qr_figure {
     background-color: var(--background-color);
     padding: 20px;
     border-radius: 20px;
-    width: 50%;
+    width: 60%;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
