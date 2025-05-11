@@ -59,6 +59,7 @@ body {
 }
 .qr_figure p {
   text-align: center;
+  line-height: 1.5em;
   padding-bottom: 20px;
 }
 .qr {
